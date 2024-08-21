@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class UIMenu {
     public static Scanner sc = new Scanner(System.in);
+    
     public final static String[] MONTHS = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 
     public static void showMenu(){
