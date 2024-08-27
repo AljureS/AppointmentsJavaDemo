@@ -11,25 +11,13 @@ public class Main {
         myDoctor.addAvailableAppoitments(new Date(), "5pm");
         myDoctor.addAvailableAppoitments(new Date(), "10am");
 
-        for (Doctor.AvailableAppointments aA : myDoctor.getAvailableAppointments()) {
-            System.out.println(aA.getDate() + " " + aA.getTime());
-        }
+        System.out.println(myDoctor);
+        // for (Doctor.AvailableAppointments aA : myDoctor.getAvailableAppointments()) {
+        //     System.out.println(aA.getDate() + " " + aA.getTime());
+        // }
 
         Patient patient = new Patient("Aleja", "aleja@mail.com");        
-        Patient patient2 = new Patient("Anahi", "anahi@mail.com");     
-        
-        System.out.println(patient.getName());
-        System.out.println(patient2.getName());
-        patient2 = patient; // Van a la misma localidad de memoria
-
-        System.out.println(patient.getName());
-        System.out.println(patient2.getName());
-        
-        patient2.setName("Manuel");
-        
-        System.out.println(patient.getName());
-        System.out.println(patient2.getName());
-
+        System.out.println(patient);
 
     }
 

@@ -7,6 +7,8 @@ public class Patient extends User {
     //Constructor 
     Patient(String name, String email){
         super(name, email);
+        //? Sobre escritura
+        
     }
     //Getters and Setters =>Validation
     public void setWeight(double weight) {
@@ -35,6 +37,11 @@ public class Patient extends User {
     }
     public String getBlood() {
         return blood;
+    }
+
+    @Override
+    public String toString(){
+        return super.toString() + "\nAge: "+ birthday + "\n Weight: " + getWeight() + "\n Height: " + getHeight() + "\n Blood type: " + getBlood() ;
     }
 
 }

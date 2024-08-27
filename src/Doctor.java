@@ -6,7 +6,7 @@ public class Doctor extends User {
 
 
     Doctor(String name, String email){
-        super(name, email);
+        super(name, email); // para llamar al constructor de la clase padre
         System.out.println("El nombre del doctor asignado es: " + name);
         this.speciality = speciality;
     }
@@ -25,6 +25,11 @@ public class Doctor extends User {
     }
     public ArrayList<AvailableAppointments> getAvailableAppointments(){
         return availableAppotiments;
+    }
+
+    @Override
+    public String toString(){
+        return super.toString() + "\nSpeciality: " + speciality + "\nAvailable Appointments: " + availableAppotiments;
     }
 
     public static class AvailableAppointments {    
@@ -56,6 +61,11 @@ public class Doctor extends User {
         }
         public void setId_availableAppointments(int id_availableAppointments) {
             this.id_availableAppointments = id_availableAppointments;
+        }
+
+        @Override
+        public String toString(){
+            return "Available Appointments: \n" +date + " at " + time;
         }
 
     }

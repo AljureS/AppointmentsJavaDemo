@@ -50,4 +50,10 @@ public class User {
 
         return phoneNumber;
     }
+
+    @Override
+    public String toString(){
+        return "User:"+ name + ", email: "+ email+
+        "\nAdress: "+ adress + ", phone number: "+ phoneNumber;
+    }
 }
