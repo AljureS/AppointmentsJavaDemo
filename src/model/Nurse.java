@@ -1,13 +1,13 @@
-import java.util.Date;
-import java.util.ArrayList;
+package model;
 
-public class Doctor extends User {
+import java.util.ArrayList;
+import java.util.Date;
+
+public class Nurse extends User {
     private String speciality;
 
-
-    Doctor(String name, String email){
+    public Nurse(String name, String email){
         super(name, email); // para llamar al constructor de la clase padre
-        System.out.println("El nombre del doctor asignado es: " + name);
         this.speciality = speciality;
     }
 
@@ -69,4 +69,4 @@ public class Doctor extends User {
         }
 
     }
-} 
+}
