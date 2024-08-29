@@ -8,7 +8,6 @@ public class Nurse extends User {
 
     public Nurse(String name, String email){
         super(name, email); // para llamar al constructor de la clase padre
-        this.speciality = speciality;
     }
 
     public String getSpeciality() {
@@ -30,6 +29,12 @@ public class Nurse extends User {
     @Override
     public String toString(){
         return super.toString() + "\nSpeciality: " + speciality + "\nAvailable Appointments: " + availableAppotiments;
+    }
+
+    @Override
+    public void showDataUser(){
+        System.out.println("Hospital: Red Cross");
+        System.out.println("Department: Nutrition");
     }
 
     public static class AvailableAppointments {    
