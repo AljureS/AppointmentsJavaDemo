@@ -58,5 +58,6 @@ public abstract class User {
         "\nAdress: "+ adress + ", phone number: "+ phoneNumber;
     }
 
+    //metodo abstracto 
     public abstract void showDataUser();
 }
