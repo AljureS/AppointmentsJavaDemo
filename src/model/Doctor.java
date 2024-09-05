@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Doctor extends User {
     private String speciality;
-
+    private ArrayList<AvailableAppointments> availableAppotiments = new ArrayList<>();
 
     public Doctor(String name, String email){
         super(name, email); // para llamar al constructor de la clase padre
@@ -21,10 +21,7 @@ public class Doctor extends User {
         this.speciality = speciality;
     }
 
-    ArrayList<AvailableAppointments> availableAppotiments = new ArrayList<>();
     public void addAvailableAppoitments (String date, String time){
-
-
         availableAppotiments.add(new AvailableAppointments(date, time));
     }
     public ArrayList<AvailableAppointments> getAvailableAppointments(){
@@ -57,8 +54,11 @@ public class Doctor extends User {
             this.time = time;
         }
 
-        public Date getDate() {
+        public Date getDate(String DATE) {
             return date;
+        }
+        public String getDate(){
+            return format.format(date);
         }
         public void setDate(Date date) {
             this.date = date;

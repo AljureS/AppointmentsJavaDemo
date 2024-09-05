@@ -64,7 +64,7 @@ public class UIDoctorMenu {
                 int responseDate = Integer.valueOf(sc.nextLine());
                 if (responseDate == 2) continue;
 
-                int responseTime =0;
+                int responseTime = 0;
                 String time = "";
                 do {
                     System.out.println("Insert the Time available for date: "+ date + " [hh:mm] ");
