@@ -27,7 +27,7 @@ public class UIDoctorMenu {
                     showAddAvailableAppoitmentsMenu();
                     break;
                 case 2:
-                    // showMyScheduledAppointmentsMenu();
+                    showMyScheduledAppointmentsMenu();
                     break;
                 case 0: 
                     UIMenu.showMenu();
@@ -89,5 +89,13 @@ public class UIDoctorMenu {
             && !doctorsAvailableAppointments.contains(doctor)) {
             doctorsAvailableAppointments.add(doctor);
         }
+    }
+
+    private static void showMyScheduledAppointmentsMenu (){
+        
+        System.out.println();
+        System.out.println("Doctor " + UIMenu.doctorLogged.getName() + ", your available appointments are: ");
+
+        System.out.println(UIMenu.doctorLogged.getAvailableAppointments());
     }
 }
