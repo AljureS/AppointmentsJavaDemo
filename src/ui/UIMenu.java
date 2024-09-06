@@ -31,8 +31,9 @@ public class UIMenu {
                     System.out.println("Doctor");
                     authUser(1);
                     break;
-                    case 2:
+                case 2:
                     response = 0;
+                    System.out.println("Patient");
                     showPatientMenu();
                     authUser(2);
                     break;
