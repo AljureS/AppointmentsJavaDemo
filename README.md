@@ -1,6 +1,8 @@
-## Getting Started
+## Doctor shift manager 👨‍💻🧑‍⚕️
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+- Developed shift management software using Java, designed for doctors and patients.
+- Enabled doctors to add available appointments and patients to book appointments through various doctor options.
+- Streamlined the appointment scheduling process for medical professionals and patients.
 
 ## Folder Structure
 
